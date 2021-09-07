@@ -1,7 +1,7 @@
 import csv
 import xml.etree.ElementTree as ET
 
-tree = ET.parse('a.xml')
+tree = ET.ElementTree(ET.fromstring('<Solution></Solution>'))
 root = tree.getroot()
 
 games = ET.SubElement(root,'Games')
